@@ -1,0 +1,10 @@
+const routes=require("express").Router()
+const uploadFile=require("../middleware/uploadFile")
+const {isAuth}=require("../middleware/isAuth")
+const adminController=require('../controller/adminController')
+routes.post("/registre",uploadFile.single("image"),adminController.registre)
+routes.put('/update/:id',isAuth,uploadFile.single("image"),adminController.update)
+routes.delete('/delete/:id',isAuth,adminController.delete)
+routes.get('/admins',isAuth, adminController.getAll)
+routes.get('/getAdmin/:id',isAuth, adminController.getById)
+module.exports=routes

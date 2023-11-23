@@ -1,0 +1,29 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "A todo api project",
+  "main": "server.js",
+  "scripts": {
+    "test": "lina",
+    "start": "nodemon server.js"
+  },
+  "author": "lina",
+  "license": "MIT",
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.7"
+  }
+}
